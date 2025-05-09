@@ -1,0 +1,14 @@
+label: Autopublish
+type: group
+fields:
+  autopublish:
+    label: Autopublish
+    type: toggle
+    translate: false
+  autopublishDate:
+    label: Autopublish Date
+    type: date
+    time: true
+    translate: false
+    when:
+      autopublish: true

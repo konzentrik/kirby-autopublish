@@ -1,0 +1,44 @@
+{
+  "name": "konzentrik/autopublish",
+  "version": "1.0.0",
+  "type": "kirby-plugin",
+  "homepage": "https://github.com/konzentrik/kirby-autopublish",
+  "description": "Set a date to automatically publish a page",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Maurice Renck",
+      "email": "maurice@maurice-renck.de"
+    },
+    {
+      "name": "Mark Schmeiser",
+      "email": "mark.schmeiser@konzentrik.de"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "konzentrik\\AutoPublish\\": "lib/"
+    },
+    "classmap": [
+      "lib"
+    ]
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "allow-plugins": {
+      "getkirby/composer-installer": true
+    }
+  },
+  "require": {
+    "php": ">=8.2.0",
+    "getkirby/composer-installer": "^1.2"
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit --testdox --colors=always",
+    "build-test-package": "git archive HEAD -o bloggerrolle.zip --worktree-attributes",
+    "build-composer": "composer install --no-dev --optimize-autoloader",
+    "build-release": [
+      "composer install --no-dev --optimize-autoloader"
+    ]
+  }
+}
