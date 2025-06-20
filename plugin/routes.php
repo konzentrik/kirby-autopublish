@@ -9,7 +9,7 @@ return [
         'pattern' => 'autopublish/cron/(:any)',
         'method' => 'GET',
         'action' => function ($secret) {
-            if (option('konzentrik.autopublish.secret', '') === $secret) {
+            if (option('konzentrik.autopublish.secret', '') === $secret && $secret !== '') {
                 $dateField = option('konzentrik.autopublish.dateField', 'autopublishDate');
 
                 $unpublishedPages = kirby()->site()->index()->drafts()->filter(function ($page) use ($dateField) {
