@@ -1,6 +1,6 @@
 {
     "name": "konzentrik/autopublish",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "type": "kirby-plugin",
     "homepage": "https://github.com/konzentrik/kirby-autopublish",
     "description": "Set a date to automatically publish a page",

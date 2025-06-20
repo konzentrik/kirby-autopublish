@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/konzentrik/kirby-autopublish/compare/v1.0.0...v1.0.1) (2025-06-20)
+
+
+### Bug Fixes
+
+* secure route when secret is empty ([c35793d](https://github.com/konzentrik/kirby-autopublish/commit/c35793dbd987dfc79eeb80c15a153b86d0d8d6e1))
+
 # 1.0.0 (2025-05-09)
 
 
