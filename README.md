@@ -4,7 +4,7 @@
 
 ![Header](/assets/autopublish-header.png)
 
-This Kirby plugin will autopublish a page when a toggle is enabled and a date set.
+This Kirby plugin will auto publish selected pages. Enable auto publishing for certain pages in the panel and set a date when to publish the page. Autopublish will handle the rest.
 
 ---
 
